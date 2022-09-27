@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  host: "localhost:4200"
+  host: "https://secret-santa-maciejwwojcik.vercel.app"
 };
