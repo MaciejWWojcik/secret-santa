@@ -17,6 +17,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatDividerModule } from "@angular/material/divider";
 import { ClipboardModule } from "@angular/cdk/clipboard";
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatIconModule } from "@angular/material/icon";
 
 const material = [
   MatButtonModule,
@@ -27,7 +28,8 @@ const material = [
   MatListModule,
   MatDividerModule,
   ClipboardModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatIconModule,
 ];
 
 const routes: Routes = [

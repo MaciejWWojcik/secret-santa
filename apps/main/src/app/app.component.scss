@@ -5,3 +5,23 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  a, a:visited {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: .75rem;
+
+    mat-icon {
+      font-size: .75rem;
+      height: .75rem;
+      width: .75rem;
+    }
+  }
+}
