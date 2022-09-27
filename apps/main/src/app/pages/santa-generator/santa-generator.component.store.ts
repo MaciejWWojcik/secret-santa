@@ -27,7 +27,7 @@ export class SantaGeneratorStore extends ComponentStore<GeneratorState> {
       links: [...santas.entries()]
         .map(([santa, assignee]) => ({
           name: santa,
-          link: `${environment.host}/for/${this.encoder.encode(assignee)}`
+          link: `${environment.host}/#/for/${this.encoder.encode(assignee)}`
         }))
     });
   });

@@ -29,7 +29,7 @@ const material = [
   MatDividerModule,
   ClipboardModule,
   MatSnackBarModule,
-  MatIconModule,
+  MatIconModule
 ];
 
 const routes: Routes = [
@@ -46,7 +46,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+      useHash: true
+    }),
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
