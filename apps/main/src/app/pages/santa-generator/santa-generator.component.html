@@ -1,0 +1,16 @@
+<h1>Generowanie Mikołajów</h1>
+<p>Podaj imiona wszystkich uczestników w polach poniżej:</p>
+
+<form [formGroup]="form">
+  <div formArrayName="names">
+    <ng-container *ngFor="let control of form.controls.names.controls; let index = index">
+      <mat-form-field appearance="fill">
+        <mat-label>Mikołaj nr. {{index + 1}}</mat-label>
+        <input type="text" matInput placeholder="Podaj imię" [formControlName]="index">
+      </mat-form-field>
+    </ng-container>
+  </div>
+</form>
+
+<button mat-raised-button color="primary" [disabled]="form.invalid" (click)="generate()">Generuj linki</button>
+

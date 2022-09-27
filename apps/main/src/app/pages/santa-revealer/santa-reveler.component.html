@@ -1,0 +1,3 @@
+<p>Zobacz kogo wylosowałeś w losowaniu sekretnego Mikołaja:</p>
+<button *ngIf="!reveal" mat-raised-button color="primary" (click)="reveal = true">Zobacz!</button>
+<h1 *ngIf="reveal"> Wylosowałeś: {{person$ | async}}</h1>
